@@ -2,7 +2,7 @@
 import { doc, getDoc, getFirestore } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import { app } from "../../../FirebaseConfig.js"
-import FileItem from "./_components/fileitem.js"
+import FileItem from "./_components/Fileitem.js"
 import Link from 'next/link.js'
 import Image from 'next/image.js'
 function FileView({params}) {
