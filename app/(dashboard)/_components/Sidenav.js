@@ -3,7 +3,7 @@ import { File, Shield, Upload } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link"
-function Sidenav({closeSideBar}) {
+function Sidenav() {
   const Menulist = [
     {
       id: 1,
@@ -39,10 +39,9 @@ function Sidenav({closeSideBar}) {
              hover:bg-gray-100 w-full text-gray-500
               ${activeIndex == index ? " text-primary bg-blue-50" : null}`}
               key={index}
-              onClick={() => {
+              onClick={() => 
                 setactiveIndex(index);
-                closeSideBar();
-              }}
+               }
             >
               {/* <a href={item.path}> */}
               <item.icon /> {item.name}
