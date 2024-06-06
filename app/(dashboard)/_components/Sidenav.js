@@ -39,7 +39,7 @@ function Sidenav() {
              hover:bg-gray-100 w-full text-gray-500
               ${activeIndex == index ? " text-primary bg-blue-50" : null}`}
               key={index}
-              onClick={() => setactiveIndex(index)>
+              onClick={() => setactiveIndex(index)}>
               {/* <a href={item.path}> */}
               <item.icon /> {item.name}
               {/* </a> */}
