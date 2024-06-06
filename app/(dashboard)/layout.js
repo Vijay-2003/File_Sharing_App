@@ -4,7 +4,6 @@ import Sidenav from './_components/Sidenav';
 import TopHeader from './_components/TopHeader';
 
 function layout({children}) {
-  // const [toggle , setToggle] = useState(false);
   return (
     <div>
       <div
@@ -14,13 +13,7 @@ function layout({children}) {
       >
         <Sidenav />
       </div>
-
-      // {toggle ? (
-      //   <div className=" h-full w-64 flex-col fixed inset-y-0 z-30 bg-white flex">
-      //     <Sidenav closeSideBar={() => setToggle(false)} />
-      //   </div>
-      // ) : null}
-
+        
       <div className=" md:ml-64">
         <TopHeader />
         {children}
